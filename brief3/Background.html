@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background</title>
+  
+  <style>
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    h1{
+      text-align:left;
+      margin: 10px;
+      font-size:60px;
+    }
+
+    body {
+      width: 100vw;
+      min-height: 200vh;
+      background: url('images/background.png') no-repeat center center fixed;
+      background-size: cover;;
+      color:white;
+      font-family: Arial;
+      font-size:30px;
+      position:relative;
+    }
+
+
+    .labels {
+      text-align:left;
+      margin: 20px 0;
+    }
+
+    .label {
+      display:inline-block;
+      border:2px solid white;
+      padding:6px 14px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size:20px;
+    }
+    .shooting-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -10;
+}
+
+.star-img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  opacity: 0.9;
+  filter: drop-shadow(2px 2px 10px yellow);
+}
+
+#star1 {
+  top: 0;
+  right: 10vw;
+  animation: shootingStar 3.3s linear infinite;
+}
+
+#star2 {
+  top: -10vh;
+  right: 40vw;
+  animation: shootingStar 4s linear infinite;
+  animation-delay: 1.2s;
+}
+
+#star3 {
+  top: -20vh;
+  right: 80vw;
+  animation: shootingStar 3.6s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes shootingStar {
+  0% {
+    transform: rotateZ(-40deg) translateX(0%) translateY(0%);
+  }
+  100% {
+    transform: rotateZ(-70deg) translateX(-150vw) translateY(50vh);
+  }
+}
+
+.timeline {
+  margin: 60px 0 60px 30px;
+  padding-left: 10px;
+  border-left: 3px solid #ffffff;
+  max-width: 600px;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-year {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.timeline-desc {
+  font-size: 17px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+
+   
+
+  </style>
+</head>
+
+<body>
+  <h1>The timeline of emoji development </h1>
+  <div class="labels">
+    <div class="label">Evolution from emoticons </div>
+  </div>
+
+
+  <div class="shooting-stars">
+    <img id="star1" class="star-img" src="images/star1.png" />
+    <img id="star2" class="star-img" src="images/star2.png" />
+    <img id="star3" class="star-img" src="images/star3.png" />
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-year">1990s</div>
+      <div class="timeline-desc">Before real emojis, people already wanted to show feelings in text. In 1982, a man named Scott Fahlman used :-) as a smiley face. Even earlier, some writers and computer users tried similar things. In the 1970s, there were simple face-like symbols in old systems like PLATO. These were called emoticons, not emojis yet. But it shows that people always wanted to add emotion in messages. For me, this is interesting because it means emoji didn’t just appear one day—they were slowly growing from these ideas.
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2000-2007</div>
+      <div class="timeline-desc">In the 2000s, emoji became super popular in Japan, but different companies didn’t agree on one shared emoji set. So, emojis looked different across phones and platforms. At the same time, Unicode—the international system for all writing characters—didn’t include Japanese emoji yet. Unicode did add some symbols from older Western systems like DOS and Zapf Dingbats, but not many Japanese ones.
+       Meanwhile, a French designer, Nicolas Loufrani, made a huge collection of smiley icons. He even registered 471 smileys in 1999 and built “The Smiley Dictionary” for emails and messaging. It became very popular and was used in platforms like MSN Messenger. People could customize smileys and add their own, which helped emoji-like icons spread outside Japan.
+       To me, this time shows how emoji was growing fast, but still kind of messy. Japan had one style, Western platforms had another. Unicode wasn’t ready yet to bring them together. It’s interesting that a lot of people used emoji-like things without realizing it, and some even helped shape what emoji is today without calling it that.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2007-2014</div>
+      <div class="timeline-desc">Google was the first US company to care about emoji. In 2007, a team from Google started pushing Unicode to accept emoji into the official character set. At first, Unicode said no—it wasn’t part of their plan. But because emoji were getting big in Japan, they changed their mind. Google and Apple worked together and sent a big proposal with 625 emoji in 2009. Unicode finally said yes in 2010.
+         Before that, both Google and Apple had their own ways to show emoji. Gmail added emoji in 2008, and Apple put them on iPhones the same year—but only for Japanese users with SoftBank SIM cards. The emoji looked like SoftBank's designs. Some users in the US found ways to unlock the emoji keyboard by using Japanese apps. A developer even made a tool in 2010 so everyone could access it.
+         In 2010, Unicode approved 722 emoji in version 6.0. Then, in 2011, Apple opened the emoji keyboard to everyone in iOS 5. More emoji came later from fonts like Wingdings. This was the real start of global emoji use. To me, this shows how tech companies helped turn emoji into a world language. </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2015-present</div>
+      <div class="timeline-desc">In 2014, Unicode asked the public for feedback on how to make emoji work better across platforms. One big topic was how to support different skin tones. People also discussed how to use a special code (called a zero-width joiner) to combine emojis, like making different family types or couple emojis.In 2015, Unicode 8.0 added new emojis like taco 🌮, sports gear 🏏, and zodiac animals 🦀🦂🦁. That same year, they released “Emoji 1.0,” which gave official rules about which characters are emoji and how they should look. They also introduced skin tone options. A special emoji team (Emoji Subcommittee) was created to handle new requests and updates.
+        By 2017, there were over 2,600 emojis. Emoji rules became an official technical standard (UTS #51). As emoji got more popular, big companies pushed Unicode to include more emojis from different cultures. Some older symbols from MSN and Yahoo were added too. But not everyone was happy—some said emoji took focus away from protecting rare or historic languages. Unicode said emoji helped vendors support more characters overall. In 2022, they stopped taking proposals for new flag emojis, unless the place became officially recognized by ISO</div>
+    </div>
+  </div>
+  
+
+</p>
+
+  </div> 
