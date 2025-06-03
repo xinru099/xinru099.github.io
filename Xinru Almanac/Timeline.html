@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background</title>
+  
+  <style>
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    h1{
+      text-align:center;
+      margin: 10px;
+      font-size:60px;
+    }
+
+    body {
+      width: 100vw;
+      min-height: 200vh;
+      background: url('images/background.png') no-repeat center center fixed;
+      background-size: cover;;
+      color:white;
+      font-family: Objektiv;
+      font-size:30px;
+      position:relative;
+    }
+
+
+    .labels {
+      text-align:center;
+      margin: 20px 0;
+    }
+
+    .label {
+      display:inline-block;
+      border:2px solid white;
+      padding:6px 14px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size:20px;
+    }
+    .shooting-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -10;
+}
+
+.star-img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  opacity: 0.9;
+  filter: drop-shadow(2px 2px 10px yellow);
+}
+
+#star1 {
+  top: 0;
+  right: 10vw;
+  animation: shootingStar 3.3s linear infinite;
+}
+
+#star2 {
+  top: -10vh;
+  right: 40vw;
+  animation: shootingStar 4s linear infinite;
+  animation-delay: 1.2s;
+}
+
+#star3 {
+  top: -20vh;
+  right: 80vw;
+  animation: shootingStar 3.6s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes shootingStar {
+  0% {
+    transform: rotateZ(-40deg) translateX(0%) translateY(0%);
+  }
+  100% {
+    transform: rotateZ(-70deg) translateX(-150vw) translateY(50vh);
+  }
+}
+
+.timeline {
+  margin: 60px auto;      
+  padding-left: 0;       
+  max-width: 650px;      
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-year {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.timeline-desc {
+  font-size: 17px;
+  color: #ffffff;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+   
+
+  </style>
+</head>
+
+<body>
+  <h1>The timeline of emoji development </h1>
+  <div class="labels">
+    <div class="label">Evolution from emoticons </div>
+  </div>
+
+
+  <div class="shooting-stars">
+    <img id="star1" class="star-img" src="images/star1.png" />
+    <img id="star2" class="star-img" src="images/star2.png" />
+    <img id="star3" class="star-img" src="images/star3.png" />
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-year">1990s</div>
+      <div class="timeline-desc">Before emoji, people already want to show feelings in text. In 1982, one man named Scott Fahlman used :-) as smiley face. Even earlier, in 1970s, some computer users tried similar things, like in PLATO system. These are called emoticons, not emoji yet. But this shows people always want to express emotion in messages. I think it’s interesting, because emoji is not appear suddenly. It slowly come from these old ideas. </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2000-2007</div>
+      <div class="timeline-desc">In 2000s, emoji become very popular in Japan. But different companies use different emoji, so not same on every phone. That time, Unicode (a system for writing characters) didn’t include Japanese emoji. It had some old symbols from DOS or Zapf Dingbats, but not many Japanese ones. At same time, a French designer Nicolas Loufrani made many smiley icons. In 1999 he register 471 smileys and make “Smiley Dictionary” for message and email. It became popular in MSN Messenger. People can also make own smileys, so emoji-like icons go to other countries too. I feel this time is when emoji grow fast, but also a bit messy. Japan use one style, western users use another, and Unicode not support it yet.</div>
+    <div class="timeline-item">
+      <div class="timeline-year">2007-2014</div>
+      <div class="timeline-desc">Google is first US company care about emoji. In 2007, their team ask Unicode to add emoji, but Unicode say no first. Later they change mind because emoji very popular in Japan. Google and Apple work together, send 625 emoji to Unicode in 2009. In 2010, Unicode say yes. Before that, Google put emoji in Gmail (2008), and Apple also put emoji in iPhone, but only for Japanese users with SoftBank. Some US people find way to unlock emoji by using Japanese apps. In 2010, one developer make tool so everyone can use. In 2011, Apple let all people use emoji in iOS 5. I think this is beginning of emoji become global. Tech companies help emoji become a world language. </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2015-present</div>
+      <div class="timeline-desc">In 2014, Unicode want to improve emoji and ask for ideas. Many people say they want skin color choices and ways to mix emoji into family or couple. In 2015, some new emoji like taco and sport things were added. Also they made some rules about how emoji should work. A team was made to check new emoji suggestions. By 2017, there were already more than 2,600 emoji. Big companies also want emoji that show different cultures. Some old emoji from MSN and Yahoo were also added back. But some people think Unicode spend too much time on emoji and don’t help small languages. Unicode say emoji actually help support more writing systems. In 2022, they said no more new flag emoji unless the place is in ISO list.</div>
+    </div>
+  </div>
+  
+
+</p>
+
+  </div> 
